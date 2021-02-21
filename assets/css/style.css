@@ -61,7 +61,8 @@ canvas {
   display: block;
 }
 
-/* end video */
+/* end prticles  */
+
 .logotyp {
   color: rgba(80, 97, 130, 0.721);
   font-family: 'Megrim', cursive;
@@ -84,7 +85,7 @@ svg:hover {
   text-decoration: none;
   color: rgba(80, 97, 130, 0.7);
   font-family: 'Megrim', cursive;
-  font-weight: 400;
+  font-weight: bold;
 }
 .tip {
   cursor: pointer;
@@ -225,20 +226,6 @@ svg:hover {
   -moz-animation: spin 4s linear infinite;
   animation: spin 4s linear infinite;
 } */
-
-/*  */
-@keyframes spin {
-  100%,
-  0% {
-    stroke-dasharray: 0;
-  }
-  33% {
-    stroke-dasharray: 50;
-  }
-  66% {
-    stroke-dasharray: 10;
-  }
-}
 
 @media only screen and (min-device-width: 320px) {
 }
