@@ -149,6 +149,13 @@ svg:hover {
   background-color: rgb(117, 124, 150);
 }
 
+.about_inner {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .section-paragraf span {
   color: rgba(243, 243, 243, 0.7);
   font-family: 'Megrim', cursive;
