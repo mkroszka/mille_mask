@@ -92,6 +92,7 @@ $(document).ready(function () {
   // });
 
   $('.tip').hide();
+  $('#contact_dot, #about_dot').hide();
 
   // line4.show('draw', { duration: 6000, timing: 'linear' });
   // line3.show('draw', { duration: 6000, timing: 'linear' });
@@ -111,6 +112,7 @@ $(document).ready(function () {
         }
       });
     $('.arrows-container').fadeToggle();
+    $('#contact_dot , #about_dot').fadeToggle();
   });
 
   $('.section').hide();
@@ -118,10 +120,14 @@ $(document).ready(function () {
   $('.navigation-button').click(function () {
     $('.section, .tip, .leader-line').hide();
     $('.tip').hide();
+    $('.circle-animated').toggle();
+
     console.log($('#' + $(this).data('id')));
     $('#' + $(this).data('id')).fadeIn(1000);
   });
+
   $('.close').click(function () {
     $('.section').fadeOut(1000);
+    $('.arrows-container').fadeIn();
   });
 });

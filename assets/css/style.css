@@ -236,7 +236,9 @@ svg:hover {
 .four {
   transform: rotate(270deg);
 }
-
+.arrows-container {
+  opacity: 0.3;
+}
 .arrows-container svg path.first-path {
   animation: scrollanim 1s ease-in-out infinite;
   animation-delay: 0.8s;
