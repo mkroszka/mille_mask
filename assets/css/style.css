@@ -19,12 +19,34 @@
   width: 100%;
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
-
+.heading {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+.quote {
+  font-size: 0.3rem;
+  color: rgb(59, 1, 61);
+  width: 100%;
+}
+.quote-mini {
+  font-size: 5px;
+  color: rgba(59, 1, 61, 0.5);
+}
+.heading h1 {
+  color: rgb(59, 1, 61);
+  font-family: 'Megrim', cursive;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
 .grid_wrapper {
   width: 100%;
   height: 80%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
@@ -75,14 +97,12 @@ svg:hover {
   filter: drop-shadow(0 0 0.3rem rgb(61, 61, 61));
 }
 
-.heading-off {
-  display: none;
-}
 .navigation-button {
   text-decoration: none;
   color: rgba(80, 97, 130, 0.7);
   font-family: 'Megrim', cursive;
   font-weight: bold;
+  font-size: 1rem;
 }
 .tip {
   cursor: pointer;
@@ -108,7 +128,7 @@ svg:hover {
 }
 .border-inside {
   background-color: rgba(117, 124, 150, 0.2);
-  padding: 2px 5px;
+  padding: 5px 12px;
   border-radius: 8%;
 }
 
@@ -120,13 +140,14 @@ svg:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(117, 124, 150, 0.9);
+  background-color: rgba(42, 3, 44, 0.802);
   padding: 5%;
   width: 65%;
   height: 65%;
   border-radius: 10px;
   content: ' ';
   font-size: 0.8rem;
+  color: rgb(132, 119, 145);
 }
 
 .about::-webkit-scrollbar-track {
@@ -164,11 +185,18 @@ svg:hover {
 }
 
 .icon i {
-  color: rgb(70, 74, 88);
+  color: rgba(243, 243, 243, 0.843);
 }
 
 .contact {
-  color: rgb(70, 74, 88);
+  background-image: url(../img/ulotjka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  width: 50%;
+  height: 50%;
+
+  color: rgb(178, 164, 179);
 }
 
 .contact a {
@@ -323,9 +351,16 @@ svg:hover {
     opacity: 0.6;
   }
 }
-/* main grid end */
-@media only screen and (min-device-width: 320px) {
-}
 
+@media only screen and (min-device-width: 320px) {
+  /* svg#logo_M {
+    width: 80%;
+  } */
+  .border-inside {
+    background-color: rgba(117, 124, 150, 0.2);
+    padding: 2px 5px;
+    border-radius: 8%;
+  }
+}
 @media (min-device-width: 1920px) {
 }
