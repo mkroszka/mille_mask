@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/section.css">
-    <link rel="stylesheet" href="assets/css/typer.css">
+
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/a4436cf5ee.js" crossorigin="anonymous"></script>
@@ -17,23 +17,25 @@
 
 
     <link rel="shortcut icon" href="https://anjawr.github.io/mille2/assets/img/favicon.ico" type="image/x-icon">
+
+
     <title>Milledion</title>
 </head>
 
 <body>
-    <div class="container-fluid d-block heading">
-        <div>
-            <h1>milledion</h1>
+    <header>
+        <div class="container d-flex heading">
+            <div class="animation_trigger" id="animation_trigger">
+                <h1>milledion</h1>
+            </div>
+
+            <div class="container-fluid justify-content-center animation_quote_container"
+                id="animation_quote_container">
+                <span class="animation_quote" id="animation_quote"></span>
+            </div>
         </div>
-        <!-- <div class="quote line">
-            <h3><span>"When Napoleon said, "Circumstance? I make circumstance"</span>‚ he
-                expressed very
-                nearly the spirit
-                of the public relations"
-                <div class="quote-mini">E. Bernays, Crystallizing Public Opinion, 1923</div>
-            </h3>
-        </div> -->
-    </div>
+
+    </header>
     <div class="main-wrapper">
 
         <!-- particles.js container -->
@@ -154,16 +156,8 @@
         </div>
 
     </div>
-    <!-- 2. motto 
-            ========================================================================= -->
-    <div class="blockquote quote_text section" id="quote"> <span class="quote_text">"When Napoleon said,
-            <span class="qspan">"Circumstance? I make circumstance"</span>‚
-            he expressed very nearly the spirit of the public relations"</span>
-        <span class="quote_source float-end">E. Bernays, <i>Crystallizing Public
-                Opinion</i>,
-            1923
-    </div>
-    <!--3. ABOUT US  =========================================================================  -->
+
+    <!--2. ABOUT US  =========================================================================  -->
     <div class="about_text section about justify-items-center align-items-center" id="about">
 
         <div class="container d-flex close justify-content-end">
@@ -225,7 +219,7 @@
 
 
     <!-- scripts -->
-    <!-- <script type="text/javascript" src="assets/js/typer.min.js"></script> -->
+
     <script type="text/javascript" src="assets/js/particles.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
@@ -236,12 +230,9 @@
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js">
 
-
-
-
-
-
+    </script>
 </body>
 
 </html>

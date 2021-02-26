@@ -44,6 +44,7 @@ $(document).ready(function () {
       $('.circle-animated').fadeOut();
     }
     $('.arrows-container').fadeToggle();
+    $('.animation_quote_container').hide();
   });
 
   $('.navigation-button').click(function () {
@@ -65,5 +66,30 @@ $(document).ready(function () {
     $('.arrows-container').fadeIn();
     $('.circle-animated').hide();
     $('.logotyp svg').show();
+  });
+  $('.animation_quote_container').hide();
+  $(function () {
+    var options = {
+      strings: [
+        'When Napoleon said, "Circumstance? I make circumstance"‚ he expressed very nearly the spirit of the public relations. <span class= "quote_heading-mini id="quote_heading-mini"> E.Bernays, Crystallizing Public Opinion, 1923</span>',
+      ],
+      typeSpeed: 0,
+      backType: 0,
+
+      loop: false,
+
+      callback: function () {
+        var x = $('.animation_quote').html();
+        $('#animation_quote_container').html('');
+        $('#animation_quote_container').append(
+          '<span class="animation_quote">' + x + '</span>'
+        );
+      },
+    };
+    $('.animation_trigger').click(function () {
+      $('.animation_quote').text('');
+      $('.animation_quote').typed(options);
+      $('.animation_quote_container').toggle();
+    });
   });
 });
