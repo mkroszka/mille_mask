@@ -105,6 +105,7 @@ canvas {
 
 .offer {
   overflow-y: scroll !important;
+  height: 80%;
 }
 
 .offer::-webkit-scrollbar-track {
@@ -144,6 +145,11 @@ canvas {
 
 .icon {
   color: rgb(243, 243, 243);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
 .contact {
@@ -174,6 +180,12 @@ canvas {
 
 .close:hover {
   color: rgba(243, 243, 243, 0.843);
+}
+.contact-col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
 }
 /* section end */
 

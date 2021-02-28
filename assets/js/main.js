@@ -92,9 +92,9 @@ $(document).ready(function () {
       ],
       typeSpeed: 0,
       backType: 0,
-
       loop: false,
-
+      showCursor: true,
+      cursorChar: '|',
       callback: function () {
         var x = $('.animation_quote').html();
         $('#animation_quote_container').html('');
