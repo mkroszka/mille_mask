@@ -433,5 +433,46 @@ svg:hover {
     border-radius: 8%;
   }
 }
-@media (min-device-width: 1920px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .border-section {
+    width: 90vw;
+  }
+  svg {
+    width: 120px;
+  }
+  .section {
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+    top: 44%;
+  }
+  .section-border-inside {
+    height: 100%;
+  }
+  .contact {
+    height: 70%;
+  }
+  .section-paragraf {
+    font-size: 0.9rem;
+  }
+  .offer {
+    margin-top: 15%;
+    height: 80%;
+  }
+
+  .navigation-button {
+    text-decoration: none;
+    color: rgba(80, 97, 130, 0.7);
+    font-family: 'Megrim', cursive;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .border-inside {
+    background-color: rgba(144, 144, 144, 0.2);
+    padding: 0.2rem 0.2rem;
+    border-radius: 8%;
+  }
+  .contact {
+    height: 40%;
+  }
 }
