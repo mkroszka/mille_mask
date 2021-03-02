@@ -38,14 +38,22 @@ header {
   font-size: 0.7rem;
 }
 /* animated quote end */
-
+.heading-row {
+  width: 98vw;
+}
 .heading h1 {
   color: rgb(59, 1, 61);
   font-family: 'Megrim', cursive;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   transition: 0.5s;
   cursor: pointer;
+}
+.heading h2 {
+  font-size: 0.8rem;
+  color: rgba(59, 1, 61, 0.7);
+  position: relative;
+  width: 100%;
 }
 .grid_wrapper {
   width: 100%;
@@ -90,10 +98,10 @@ canvas {
 
 .section {
   z-index: 10;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 15%);
   /* background-color: rgba(42, 3, 44, 0.802); */
   /* width: 65%;
   height: 65%; */
@@ -102,23 +110,46 @@ canvas {
   color: rgb(86, 86, 86);
   overflow: hidden;
 }
+.about,
+.offer {
+  overflow-y: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 
 .offer {
-  overflow-y: scroll !important;
   height: 80%;
 }
 
+.offer h3 {
+  display: block;
+  width: 100%;
+  color: rgb(93, 70, 117);
+  font-size: 1.2rem;
+}
+
+.offer ul {
+  list-style-type: circle;
+}
+
+.offer span {
+  color: rgb(93, 70, 117);
+  font-family: 'Megrim', cursive;
+  font-weight: bolder;
+}
+.about::-webkit-scrollbar-track,
 .offer::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   background-color: rgb(208, 208, 208);
 }
 
+.about::-webkit-scrollbar,
 .offer::-webkit-scrollbar {
   width: 12px;
   background-color: rgba(68, 68, 68, 0);
 }
-
+.about::-webkit-scrollbar-thumb,
 .offer::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -132,6 +163,7 @@ canvas {
   flex-wrap: wrap;
   align-content: center;
   text-align: justify;
+  padding: 2% 5%;
 }
 .section-paragraf {
   font-size: 1.2rem;
@@ -159,9 +191,11 @@ canvas {
   border-radius: 10px;
   opacity: 0.9;
   width: 50%;
-  height: 50%;
+  height: 40vh;
   color: rgb(155, 155, 155);
   font-size: 1.2rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 .contact a {
@@ -171,15 +205,15 @@ canvas {
 
 .close {
   position: relative;
-  display: flex;
-  justify-content: flex-end;
+  float: right;
+  margin: 0px 20px;
   padding: 10px 20px;
   font-size: 1.5rem;
   color: rgb(114, 94, 135);
 }
 
-.close:hover {
-  color: rgba(243, 243, 243, 0.843);
+.close i:hover {
+  color: rgba(156, 143, 169, 0.5);
 }
 .contact-col {
   display: flex;
@@ -187,6 +221,11 @@ canvas {
   justify-content: center;
   align-self: center;
 }
+
+.contact span {
+  color: rgb(208, 208, 208);
+}
+
 /* section end */
 
 /* main grid container start*/
@@ -304,6 +343,9 @@ svg:hover {
   border: 15px solid !important;
   border-image: url(../img/border.svg) !important;
   border-image-slice: 55 50 !important;
+  width: 60%;
+  /* background-color: rgba(144, 144, 144, 0.2); */
+  margin: 20px;
 }
 .section-border-about {
   border-radius: 26px;
@@ -313,11 +355,16 @@ svg:hover {
   padding: 1rem 1.5rem;
   border-radius: 8%;
 }
-
-.section-border-inside {
+.grey {
   background-color: rgba(144, 144, 144, 0.2);
-  padding: 5% 5%;
+  top: 0;
+  height: 100%;
+  margin: 3% 2%;
+}
+.section-border-inside {
+  /* background-color: rgba(144, 144, 144, 0.2); */
   margin: 3%;
+  height: 100%;
 }
 
 @-webkit-keyframes scrollanim {
@@ -396,8 +443,8 @@ svg:hover {
     opacity: 0.6;
   }
 }
-/* RESPONSIVE */
-@media only screen and (max-width: 600px) {
+/* RESPONSIVE=================================================================================== */
+@media only screen and (max-width: 360px) {
   .border-inside {
     padding: 2px 5px;
   }
@@ -412,10 +459,20 @@ svg:hover {
   }
   .contact {
     height: 70%;
+    margin-top: 20px;
   }
   .section-paragraf {
     font-size: 0.9rem;
   }
+
+  .about_inner,
+  .offer_inner {
+    padding: 0% 2%;
+  }
+  .offer_inner h3 {
+    font-size: 1.05rem;
+  }
+  .about,
   .offer {
     margin-top: 15%;
     height: 85%;
@@ -432,13 +489,34 @@ svg:hover {
     padding: 0.2rem 0.2rem;
     border-radius: 8%;
   }
+  .grey {
+    background-color: rgba(208, 208, 208, 0);
+  }
+
+  .close {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .contact .close {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+  .offer .close {
+    display: block;
+    width: 100%;
+    transform: translate(-15%, 1%);
+    margin-bottom: 20%;
+  }
 }
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
+
+@media (min-device-width: 375px) and (max-device-width: 1024px) {
   .border-section {
     width: 90vw;
   }
   svg {
-    width: 120px;
+    width: 110px;
   }
   .section {
     width: 90vw;
@@ -450,16 +528,35 @@ svg:hover {
     height: 100%;
   }
   .contact {
-    height: 70%;
+    height: 60%;
+    width: 90%;
   }
   .section-paragraf {
     font-size: 0.9rem;
   }
+
+  .about_inner,
+  .offer_inner {
+    padding: 0% 2%;
+  }
+  .close {
+    padding: 0;
+  }
+
   .offer {
     margin-top: 15%;
     height: 80%;
   }
 
+  .offer .close {
+    display: block;
+    width: 100%;
+    transform: translate(-10%, 1%);
+    margin-bottom: 15%;
+  }
+  .grey {
+    background-color: rgba(208, 208, 208, 0);
+  }
   .navigation-button {
     text-decoration: none;
     color: rgba(80, 97, 130, 0.7);
@@ -471,8 +568,5 @@ svg:hover {
     background-color: rgba(144, 144, 144, 0.2);
     padding: 0.2rem 0.2rem;
     border-radius: 8%;
-  }
-  .contact {
-    height: 40%;
   }
 }
