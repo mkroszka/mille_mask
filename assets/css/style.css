@@ -50,7 +50,7 @@ header {
   cursor: pointer;
 }
 .heading h2 {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: rgba(59, 1, 61, 0.7);
   position: relative;
   width: 100%;
@@ -188,16 +188,17 @@ canvas {
 .contact {
   background-image: url(../img/ulotjka.jpg);
   background-size: cover;
+  background-position: center left;
   background-repeat: no-repeat;
   border-radius: 10px;
   opacity: 0.9;
-  width: 50%;
+  width: 45%;
   height: auto;
   color: rgb(155, 155, 155);
   font-size: 1.2rem;
   transform: translate(-50%, -50%);
   position: absolute;
-  padding: 20px;
+  padding: 50px;
 }
 
 .contact a {
@@ -457,8 +458,8 @@ svg:hover {
     top: 44%;
   }
   .contact {
-    /* height: 70%; */
-    margin-top: 20px;
+    height: auto;
+    margin-top: 12vh;
     padding-bottom: 30px;
   }
   .section-paragraf {
