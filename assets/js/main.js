@@ -104,6 +104,10 @@ $(document).ready(function () {
       },
     };
     $('.animation_trigger').click(function () {
+      $('.tip').hide();
+      lineAbout.hide();
+      lineContact.hide();
+      lineOffer.hide();
       $('.animation_quote').text('');
       $('.animation_quote').typed(options);
       $('.animation_quote_container').toggle();
