@@ -102,17 +102,17 @@ canvas {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 15%);
-  /* background-color: rgba(42, 3, 44, 0.802); */
-  /* width: 65%;
-  height: 65%; */
   content: ' ';
-  font-size: 0.8rem;
+
   color: rgb(86, 86, 86);
   overflow: hidden;
 }
+.about.section {
+  font-size: 0.8rem;
+}
 .m_circle {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   background-color: rgb(114, 94, 135);
   color: rgb(228, 228, 228);
   border-radius: 50px;
@@ -120,8 +120,8 @@ canvas {
   justify-content: center;
   align-items: center;
   font-family: 'Megrim', cursive;
-  font-size: 1.3rem;
-  font-weight: 450;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .about,
 .offer {
@@ -174,7 +174,7 @@ canvas {
   background-color: rgb(114, 94, 135);
 }
 
-.about_inner,
+/* .about_inner, */
 .offer_inner {
   height: 100%;
   display: flex;
@@ -183,8 +183,47 @@ canvas {
   text-align: justify;
   padding: 5% 5%;
 }
+/* ============================== slider ====================== */
+
+.slider_nav {
+  position: absolute;
+  bottom: 10px;
+  margin-top: 10px;
+}
+.slider-button {
+  display: inline-flex;
+  width: 24px;
+  height: 1.5rem;
+  background: rgb(93, 70, 117);
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 2rem 0 0;
+  position: relative;
+}
+#offer_button_three .slider-button {
+  margin: 0;
+}
+.slider-button:hover {
+  top: 1px;
+  color: rgb(184, 149, 221);
+}
+
+.slider-button:active {
+  top: 1px;
+}
+.slider_circles > a:focus {
+  background: rgb(93, 70, 117);
+}
+/* .slider_circles {
+  margin-bottom: 1rem;
+} */
+/* =============================================slider end================================ */
+
 .section-paragraf {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .section-paragraf span {
@@ -194,38 +233,44 @@ canvas {
 }
 
 .icon {
-  color: rgb(243, 243, 243);
+  color: rgb(135, 135, 135);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
-  font-size: 1.7rem;
+  padding: 0.1rem;
+  font-size: 1rem;
+}
+.icon p {
+  margin-bottom: 5px;
 }
 
 .contact {
-  background-image: url(../img/ulotjka.jpg);
-  background-size: cover;
-  background-position: center left;
+  background-image: url(../img/contact_right.png), url(../img/contact_right.jpg);
+  background-size: 50%, 70%;
+  background-position: left bottom, right bottom;
   background-repeat: no-repeat;
+  background-color: rgb(67, 22, 77);
   border-radius: 10px;
   opacity: 0.9;
-  width: 45%;
+  width: 50%;
   height: auto;
   color: rgb(155, 155, 155);
   font-size: 1.2rem;
   transform: translate(-50%, -50%);
   position: absolute;
-  padding: 50px;
+  padding: 0px 30px;
 }
-
+.fa-home,
 .contact a {
   color: rgb(243, 243, 243);
   text-decoration: none;
 }
+.fa-home {
+  margin-top: 20px;
+}
 
 .contact .m_circle {
-  color: rgb(93, 70, 117);
   width: 24px;
   height: 24px;
   background-color: rgb(114, 94, 135);
@@ -236,11 +281,11 @@ canvas {
   align-items: center;
   font-family: 'Megrim', cursive;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 800;
   margin: 20px 10px 20px 0px;
 }
 
-.offer .m_circle{
+.offer .m_circle {
   margin: 10px 10px 20px 30px;
 }
 .close {
@@ -253,13 +298,15 @@ canvas {
   color: rgba(156, 143, 169, 0.5);
 }
 .offer .close {
-  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
 .contact-col {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-self: center;
 }
 
 .contact span {
@@ -383,7 +430,8 @@ svg:hover {
   border: 15px solid !important;
   border-image: url(../img/border.svg) !important;
   border-image-slice: 55 50 !important;
-  width: 60%;
+  min-width: 70vw;
+  min-height: 65vh;
   /* background-color: rgba(144, 144, 144, 0.2); */
   margin: 20px;
 }
@@ -395,13 +443,19 @@ svg:hover {
   padding: 1rem 1.5rem;
   border-radius: 8%;
 }
+.nav_upper {
+  /* margin: 1.5rem 1rem; */
+  padding: 20px 20px;
+}
 .grey {
   background-color: rgba(144, 144, 144, 0.2);
-  top: 0;
   margin: 3% 2%;
+  position: absolute;
+  min-height: 90%;
+  min-width: 96%;
 }
-.about .grey .m_circle{
-  margin:20px;
+.about .grey .m_circle {
+  margin: 20px;
 }
 
 @-webkit-keyframes scrollanim {
@@ -500,9 +554,8 @@ svg:hover {
     padding-bottom: 30px;
   }
   .contact .m_circle {
-
-  margin: 20px 10px 0px 25px;
-}
+    margin: 20px 10px 0px 25px;
+  }
   .section-paragraf {
     font-size: 0.9rem;
   }
@@ -542,7 +595,6 @@ svg:hover {
 
   .about .grey .m_circle {
     margin-bottom: 10px;
-
   }
   .col-border-left {
     border: none;
