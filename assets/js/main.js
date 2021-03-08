@@ -1,3 +1,6 @@
+$(window).on('load', function () {
+  $('#coverScreen').hide();
+});
 $(document).ready(function () {
   var end_about = document.getElementById('about-btn'),
     start_about = document.getElementById('about_dot'),
@@ -5,34 +8,7 @@ $(document).ready(function () {
     start_contact = document.getElementById('contact_dot'),
     start_offer = document.getElementById('offer_dot'),
     end_offer = document.getElementById('offer_btn');
-  // start_offercircle1 = document.getElementById('offer_button_one'),
-  // end_offercircle1 = document.getElementById('offer_button_two'),
-  // start_offercircle2 = document.getElementById('offer_button_two'),
-  // end_offercircle2 = document.getElementById('offer_button_three');
 
-  // var lineOffer1 = new LeaderLine(start_offercircle1, end_offercircle1, {
-  //   color: 'rgb(196, 196, 196)',
-  //   size: 1,
-  //   path: 'straigh',
-  //   startPlug: 'behind',
-  //   endPlug: 'disc',
-  //   startPlugSize: 2,
-  //   startPlugOutlineSize: 2.5,
-  //   endPlugOutlineSize: 1,
-  //   hide: true,
-  // });
-
-  // var lineOffer2 = new LeaderLine(start_offercircle2, end_offercircle2, {
-  //   color: 'rgb(196, 196, 196)',
-  //   size: 1,
-  //   path: 'straigh',
-  //   startPlug: 'behind',
-  //   endPlug: 'disc',
-  //   startPlugSize: 2,
-  //   startPlugOutlineSize: 2.5,
-  //   endPlugOutlineSize: 1,
-  //   hide: true,
-  // });
   var lineAbout = new LeaderLine(start_about, end_about, {
     color: 'rgb(196, 196, 196)',
     size: 1,
@@ -104,10 +80,7 @@ $(document).ready(function () {
       $('#' + $(this).data('id')).fadeIn(1000);
     }
   });
-  // $('#offer_btn').click(function () {
-  //   lineOffer2.show('draw', { duration: 600, timing: 'linear' });
-  //   lineOffer1.show('draw', { duration: 600, timing: 'linear' });
-  // });
+
   $('.s_button').click(function () {
     $('.slider').hide();
     $('#' + $(this).data('id')).fadeIn(1000);
