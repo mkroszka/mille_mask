@@ -108,7 +108,7 @@ $(document).ready(function () {
   //   lineOffer2.show('draw', { duration: 600, timing: 'linear' });
   //   lineOffer1.show('draw', { duration: 600, timing: 'linear' });
   // });
-  $('.slider-button').click(function () {
+  $('.s_button').click(function () {
     $('.slider').hide();
     $('#' + $(this).data('id')).fadeIn(1000);
   });
