@@ -42,7 +42,7 @@ $(document).ready(function () {
     endPlugOutlineSize: 1,
     hide: true,
   });
-
+  $('#coverScreen').hide();
   $('.section').hide();
   $('.tip').hide();
   $('#contact_dot, #about_dot, #offer_dot').hide();
