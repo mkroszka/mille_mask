@@ -121,6 +121,11 @@ $(window).on('load', function () {
         $('.animation_quote').typed(options);
         $('.animation_quote_container').toggle();
       });
+
+        $('.slider-button').click(function () {
+          $('.slider-button').removeClass('active');
+          $(this).addClass('active');
+        });
     });
   });
 });
