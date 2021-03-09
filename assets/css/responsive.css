@@ -43,14 +43,14 @@
     margin-top: 12vh;
     padding-bottom: 15px;
   }
-  .contact .m_circle,
+  /* .contact .m_circle, */
   .sup > div {
     margin: 20px 10px 0px 25px;
       }
   .contact {
     height: auto;
     width: 90%;
-    padding: 20px;
+    padding: 0 20px;
   }
 
   /* about offer */
