@@ -110,6 +110,12 @@ header {
 .about.section {
   font-size: 0.8rem;
 }
+.about .grey {
+  background-image: url(../img/warsaw-5113214_1920.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .m_circle {
   width: 30px;
   height: 30px;
@@ -230,6 +236,7 @@ header {
 
 .section-paragraf {
   font-size: 1rem;
+  color: rgb(61, 61, 61);
 }
 
 .section-paragraf span {
@@ -301,7 +308,7 @@ header {
 }
 
 .close i:hover {
-  color: rgba(156, 143, 169, 0.5);
+  color: rgba(220, 220, 220, 0.5);
 }
 .offer .close {
   display: flex;
