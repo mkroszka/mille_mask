@@ -245,7 +245,7 @@ header {
   font-weight: bold;
 }
 
-.icon {
+.info {
   color: rgb(135, 135, 135);
   width: 100%;
   display: flex;
@@ -254,8 +254,8 @@ header {
   padding: 0.1rem;
   font-size: 1rem;
 }
-.icon p {
-  margin-bottom: 5px;
+.info p {
+  margin-bottom: 3px;
 }
 
 .contact {
@@ -272,17 +272,21 @@ header {
   font-size: 1.2rem;
   transform: translate(-50%, -50%);
   position: absolute;
-  padding: 0px 30px;
+  padding: 0px 5px;
 }
-.fa-home,
+.fas,
 .contact a {
-  color: rgb(243, 243, 243);
+  color: rgb(209, 198, 214);
   text-decoration: none;
 }
-.fa-home {
+
+.info .fas {
   margin-top: 20px;
 }
-
+.contact .close i {
+  margin-top: 5px;
+  color: rgb(114, 94, 135);
+}
 .contact .m_circle {
   width: 24px;
   height: 24px;
@@ -298,6 +302,13 @@ header {
   margin: 10px 0px 8px 0px;
 }
 
+.sup {
+  font-size: small;
+  display: flex;
+  padding: 0 0 1rem;
+  justify-content: flex-end;
+  /* width: 25%; */
+}
 .offer .m_circle {
   margin: 10px 10px 20px 30px;
 }
