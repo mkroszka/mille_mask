@@ -46,7 +46,7 @@ $(window).on('load', function () {
     $('.section').hide();
     $('.tip').hide();
     $('#contact_dot, #about_dot, #offer_dot').hide();
-    $('#offer-two, #offer-three').hide();
+    $('#offer-two, #offer-three, #offer-four').hide();
 
     $('#logotyp').on('click', function () {
       if ($('.tip').is(':hidden')) {
@@ -122,10 +122,10 @@ $(window).on('load', function () {
         $('.animation_quote_container').toggle();
       });
 
-        $('.slider-button').click(function () {
-          $('.slider-button').removeClass('active');
-          $(this).addClass('active');
-        });
+      $('.slider-button').click(function () {
+        $('.slider-button').removeClass('active');
+        $(this).addClass('active');
+      });
     });
   });
 });
