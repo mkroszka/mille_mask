@@ -39,8 +39,8 @@ header {
 }
 
 .animation_quote_container {
-  position: absolute;
-  top: 5rem;
+  position: relative;
+  top: 1rem;
 }
 .quote_heading-mini {
   font-size: 0.7rem;
