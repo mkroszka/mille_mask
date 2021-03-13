@@ -160,6 +160,10 @@ header {
   list-style-type: circle;
 }
 
+.offer ul li{
+  margin-bottom: 0.6rem;
+}
+
 .offer span {
   color: rgb(93, 70, 117);
   font-family: 'Megrim', cursive;
@@ -202,7 +206,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  background-color: rgba(127, 127, 127, 0.142);
+  background-color: rgb(186, 186, 186);
   position: absolute;
   bottom: 0;
   margin-top: 20px;
@@ -217,9 +221,9 @@ header {
   padding: 3px;
   transition: 0.7s;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
   color: rgb(67, 22, 77);
-
   font-family: 'Quicksand', sans-serif;
 }
 .border-right {
@@ -277,7 +281,8 @@ header {
   color: rgb(209, 198, 214);
 }
 .contact {
-  background-image: url(../img/contact_right2.png), url(../img/contact_right.jpg);
+  background-image: url(../img/contact_right2.png),
+    url(../img/contact_right.jpg);
   background-size: 35%, 50%;
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
@@ -472,8 +477,8 @@ svg:hover {
   border: 15px solid !important;
   border-image: url(../img/border.svg) !important;
   border-image-slice: 55 50 !important;
-  min-width: 70vw;
-  min-height: 65vh;
+  min-width: 50vw;
+  min-height: 55vh;
   margin: 20px;
 }
 
@@ -486,7 +491,7 @@ svg:hover {
   padding: 20px 20px;
 }
 .grey {
-  background-color: rgba(255, 255, 255, 0.333);
+  background-color: rgb(249, 249, 249);
   margin: 2% 2%;
   position: relative;
   min-height: inherit;
