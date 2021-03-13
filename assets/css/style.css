@@ -497,10 +497,15 @@ svg:hover {
 }
 .grey {
   background-color: rgb(249, 249, 249);
+  background-image: url(../img/offer-one.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 2% 2%;
   position: relative;
   min-height: inherit;
   min-width: 96%;
+  transition: 0.5s;
 }
 
 @-webkit-keyframes scrollanim {

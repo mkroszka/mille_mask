@@ -70,6 +70,7 @@ $(window).on('load', function () {
       $('.section, .tip').hide();
       $('.tip').hide();
       $('.circle-animated').hide();
+      // $('.grey').css({ 'background-image': 'url(assets/img/offer-one.jpg)' });
       lineAbout.hide();
       lineContact.hide();
       lineOffer.hide();
@@ -84,6 +85,10 @@ $(window).on('load', function () {
     $('.s_button').click(function () {
       $('.slider').hide();
       $('#' + $(this).data('id')).fadeIn(1000);
+
+      $('.grey').css({
+        'background-image': 'url(assets/img/' + $(this).data('id') + '.jpg)',
+      });
     });
 
     $('.close').click(function () {

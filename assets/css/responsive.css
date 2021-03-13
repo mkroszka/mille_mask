@@ -70,13 +70,12 @@
     height: 90vh;
   }
   .offer ul li {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-}
-.offer h3{
-  font-size: 1.5rem;
-}
-
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+  .offer h3 {
+    font-size: 1.5rem;
+  }
 
   .about,
   .offer {
@@ -106,14 +105,13 @@
   }
 
   .slider-button {
+    padding: 0.1rem 0.2rem;
 
- padding: 0.1rem 0.2rem;
-
-  font-size: 1rem;
-  font-weight: bold;
-  color: rgb(67, 22, 77);
-  font-family: 'Quicksand', sans-serif;
-}
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(67, 22, 77);
+    font-family: 'Quicksand', sans-serif;
+  }
 
   .border-right {
     border-right: 0;
@@ -133,14 +131,14 @@
     background-size: 30%, 35%;
     width: 35%;
   }
-.offer ul li{
-  font-size: x-large;
-}
-.section-paragraf{
-  font-size:x-large;
-}
+  .offer ul li {
+    font-size: x-large;
+  }
+  .section-paragraf {
+    font-size: x-large;
+  }
 
-/* .border-section {
+  /* .border-section {
   border: 15px solid !important;
   border-image: url(../img/border.svg) !important;
   border-image-slice: 55 50 !important;
