@@ -37,6 +37,11 @@ header {
   padding: 0;
   margin: 0;
 }
+
+.animation_quote_container {
+  position: absolute;
+  top: 5rem;
+}
 .quote_heading-mini {
   font-size: 0.7rem;
 }
@@ -47,14 +52,14 @@ header {
 .heading h1 {
   color: rgb(59, 1, 61);
   font-family: 'Megrim', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   transition: 0.5s;
   cursor: pointer;
   margin-bottom: 0;
 }
 .heading h2 {
-  font-size: 0.7rem;
+  font-size: 1.06rem;
   color: rgba(34, 34, 34, 0.7);
   font-family: 'Quicksand', sans-serif;
   position: relative;
@@ -109,9 +114,7 @@ header {
   color: rgb(86, 86, 86);
   overflow: hidden;
 }
-.about.section {
-  font-size: 0.8rem;
-}
+
 .about .grey {
   background-image: url(../img/warsaw-5113214_1920.jpg);
   background-size: cover;
@@ -153,15 +156,17 @@ header {
   display: block;
   width: 100%;
   color: rgb(93, 70, 117);
-  font-size: 1.2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .offer ul {
   list-style-type: circle;
 }
 
-.offer ul li{
+.offer ul li {
   margin-bottom: 0.6rem;
+  font-size: 1em;
 }
 
 .offer span {
@@ -218,7 +223,7 @@ header {
   border: solid, 0 1px, rgb(67, 22, 77);
   display: flex;
   justify-content: center;
-  padding: 3px;
+  padding: 0.5rem 0.5rem;
   transition: 0.7s;
   position: relative;
   font-size: 0.8rem;
@@ -255,7 +260,7 @@ header {
 /* =============================================slider end================================ */
 
 .section-paragraf {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: rgb(61, 61, 61);
 }
 
@@ -333,7 +338,7 @@ header {
   /* width: 25%; */
 }
 .offer .m_circle {
-  margin: 1rem 1rem 2rem 1rem;
+  margin: 1rem 1rem 2.5rem 1rem;
 }
 .close {
   font-size: 1.5rem;
