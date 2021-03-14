@@ -52,14 +52,14 @@ header {
 .heading h1 {
   color: rgb(59, 1, 61);
   font-family: 'Megrim', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   transition: 0.5s;
   cursor: pointer;
   margin-bottom: 0;
 }
 .heading h2 {
-  font-size: 1.06rem;
+  font-size: 0.88rem;
   color: rgba(34, 34, 34, 0.7);
   font-family: 'Quicksand', sans-serif;
   position: relative;
@@ -258,7 +258,7 @@ header {
 /* =============================================slider end================================ */
 
 .section-paragraf {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: rgb(61, 61, 61);
 }
 
