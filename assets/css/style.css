@@ -156,8 +156,8 @@ header {
   display: block;
   width: 100%;
   color: rgb(93, 70, 117);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .offer ul {
@@ -240,15 +240,13 @@ header {
   width: 25%;
   /* border-bottom: 1px solid rgba(93, 70, 117, 0.387); */
 }
-
+.slider-button:active,
 .slider-button:hover {
-  top: 1px;
+  /* top: 1px; */
   color: rgb(155, 155, 155);
 }
 
-.slider-button:active {
-  top: 1px;
-}
+
 
 .active {
   background-color: rgb(93, 70, 117);
@@ -497,16 +495,18 @@ svg:hover {
 }
 .grey {
   background-color: rgb(249, 249, 249);
-  background-image: url(../img/offer-one.jpg);
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 2% 2%;
   position: relative;
   min-height: inherit;
   min-width: 96%;
   transition: 0.5s;
 }
+
+.offer_one{ background: url(../img/offer-one.jpg) no-repeat right bottom;
+background-size: cover;}
+.offer_two{background: url(../img/offer-two.jpg) no-repeat right top; background-size: cover;}
+.offer_three{background: url(../img/offer_three.jpg)  no-repeat right bottom; background-size: cover;}
+.offer_four{background: url(../img/offer-four.jpg) no-repeat right top; background-size: cover;}
 
 @-webkit-keyframes scrollanim {
   0% {

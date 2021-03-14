@@ -82,13 +82,25 @@ $(window).on('load', function () {
       }
     });
 
+    // offer section fade navigation
     $('.s_button').click(function () {
       $('.slider').hide();
       $('#' + $(this).data('id')).fadeIn(1000);
+    });
 
-      $('.grey').css({
-        'background-image': 'url(assets/img/' + $(this).data('id') + '.jpg)',
-      });
+    $('#offer_button_one').click(function () {
+      $('#grey').removeClass().addClass('offer_one grey');
+    });
+
+    $('#offer_button_two').click(function () {
+      $('#grey').removeClass().addClass('offer_two grey');
+    });
+
+    $('#offer_button_three').click(function () {
+      $('#grey').removeClass().addClass('offer_three grey');
+    });
+    $('#offer_button_four').click(function () {
+      $('#grey').removeClass().addClass('offer_four grey');
     });
 
     $('.close').click(function () {
