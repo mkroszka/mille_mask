@@ -156,7 +156,7 @@ header {
   display: block;
   width: 100%;
   color: rgb(93, 70, 117);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -166,7 +166,7 @@ header {
 
 .offer ul li {
   margin-bottom: 0.6rem;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .offer span {
@@ -258,7 +258,7 @@ header {
 /* =============================================slider end================================ */
 
 .section-paragraf {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(61, 61, 61);
 }
 
@@ -484,7 +484,7 @@ svg:hover {
   border-image: url(../img/border.svg) !important;
   border-image-slice: 55 50 !important;
   min-width: 50vw;
-  min-height: 55vh;
+  min-height: 50vh;
   margin: 20px;
 }
 
