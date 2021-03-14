@@ -286,7 +286,7 @@ header {
 .contact {
   background-image: url(../img/contact_right2.png),
     url(../img/contact_right.jpg);
-  background-size: 35%, 50%;
+  background-size: 35%, 60%;
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
   background-color: rgb(67, 22, 77);
@@ -336,7 +336,10 @@ header {
   /* width: 25%; */
 }
 .offer .m_circle {
-  margin: 1rem 1rem 2.5rem 1rem;
+  margin: 1rem 1rem 2.5rem 0.5rem;
+}
+.offer .close{
+    padding-right: 0.5rem;
 }
 .close {
   font-size: 1.5rem;

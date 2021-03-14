@@ -125,10 +125,17 @@
     font-size: 1rem;
   }
 }
+/* xlarge========================================================================== */
 
+@media (min-device-width:1440px) {
+  .contact {
+    background-size: 30%, 60%;
+    width: 35%;
+  }
+}
 @media (min-device-width: 2350px) {
   .contact {
-    background-size: 30%, 35%;
+    background-size: 30%, 45%;
     width: 35%;
   }
   .offer ul li {
