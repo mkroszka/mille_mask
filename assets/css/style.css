@@ -264,6 +264,7 @@ header {
 .section-paragraf {
   font-size: 0.8rem;
   color: rgb(61, 61, 61);
+  padding-bottom: 35px;
 }
 
 .section-paragraf span {
