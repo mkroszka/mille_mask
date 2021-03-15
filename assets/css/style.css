@@ -157,7 +157,7 @@ header {
   display: block;
   width: 100%;
   color: rgb(93, 70, 117);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -262,7 +262,7 @@ header {
 /* =============================================slider end================================ */
 
 .section-paragraf {
-  font-size: 0.8rem;
+  font-size: 1em;
   color: rgb(61, 61, 61);
   padding-bottom: 5%;
 }
