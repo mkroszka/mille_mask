@@ -146,10 +146,13 @@
     width: 35%;
   }
   .offer ul li {
-    font-size: x-large;
+    font-size: 1.2rem;
   }
   .section-paragraf {
-    font-size: x-large;
+    font-size: 1.2rem;
+  }
+  .offer h3{
+    font-size: 1.6rem
   }
 
   /* .border-section {
