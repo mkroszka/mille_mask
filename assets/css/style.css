@@ -210,7 +210,7 @@ header {
 .slider_nav {
   width: 100%;
   height: 40px;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -339,7 +339,7 @@ header {
   /* width: 25%; */
 }
 .offer .m_circle {
-  margin: 1rem 1rem 2.5rem 0.5rem;
+  margin: 1rem 1rem 45px 0.5rem;
 }
 .offer .close{
     padding-right: 0.5rem;
