@@ -11,6 +11,7 @@
 }
 body {
   font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
 }
 
 .main-wrapper {
@@ -159,6 +160,7 @@ header {
   color: rgb(93, 70, 117);
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .offer ul {
@@ -167,7 +169,7 @@ header {
 
 .offer ul li {
   margin-bottom: 0.6rem;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .offer span {
