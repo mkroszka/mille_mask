@@ -505,7 +505,7 @@ svg:hover {
   transition: 0.5s;
 }
 
-.offer_one{ background: url(../img/offer-one.jpg) no-repeat right bottom;
+.offer_one{ background: url(../img/offer-one.jpg) no-repeat right center;
 background-size: cover;}
 .offer_two{background: url(../img/offer-two.jpg) no-repeat right top; background-size: cover;}
 .offer_three{background: url(../img/offer_three.jpg)  no-repeat right bottom; background-size: cover;}
