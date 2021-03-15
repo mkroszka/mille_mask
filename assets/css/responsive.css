@@ -95,7 +95,7 @@
   .slider_nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(220, 220, 220);
    height: auto;
   }
   .s_button {
