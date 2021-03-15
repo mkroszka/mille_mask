@@ -291,7 +291,7 @@ header {
   color: rgb(209, 198, 214);
 }
 .contact {
-  background-image: url(../img/contact_right2.png),
+  background-image: url(../img/contact_right.png),
     url(../img/contact_right.jpg);
   background-size: 35%, 60%;
   background-position: left bottom, right bottom;
