@@ -132,11 +132,11 @@ header {
   justify-content: center;
   align-items: center;
   font-family: 'Megrim', cursive;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
-  margin-left: 1.2rem;
+  margin-left: 0.5em;
   position: absolute;
-  margin-bottom: 7px;
+  margin-bottom: 0.5em;
   bottom: 0;
 }
 .about,
@@ -216,7 +216,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  background-color: rgb(186, 186, 186);
+  /* background-color: rgb(186, 186, 186); */
   position: absolute;
   bottom: 0;
   margin-top: 20px;
@@ -345,13 +345,14 @@ header {
 .offer .m_circle {
   margin: 1rem 1rem 45px 0.5rem;
 }
-.offer .close{
+/* .offer .close{
     padding-right: 0.5rem;
-}
+} */
 .close {
   font-size: 1.5rem;
   color: rgb(114, 94, 135);
-  padding-right: 1rem;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
 }
 
 .close i:hover {
@@ -361,7 +362,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .contact-col {
   display: flex;
@@ -490,7 +491,7 @@ svg:hover {
   border: 15px solid !important;
   border-image: url(../img/border.svg) !important;
   border-image-slice: 55 50 !important;
-  min-width: 45vw;
+  min-width: 49vw;
   min-height: 50vh;
   margin: 20px;
 }
