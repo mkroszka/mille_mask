@@ -266,9 +266,17 @@ header {
 .section-paragraf {
   font-size: 1em;
   color: rgb(61, 61, 61);
-  padding-bottom: 5%;
+
+  width: 45%;
 }
 
+.section-paragraf-left{
+    padding-bottom: 15%;
+}
+
+.section-paragraf-center{
+  width: 100%;
+}
 .section-paragraf span {
   color: rgb(93, 70, 117);
   font-family: 'Megrim', cursive;
@@ -343,7 +351,8 @@ header {
   /* width: 25%; */
 }
 .offer .m_circle {
-  margin: 1rem 1rem 45px 0.5rem;
+  margin-right: 0.5em;
+margin-bottom: calc(40px + 0.5em);
 }
 /* .offer .close{
     padding-right: 0.5rem;
