@@ -204,7 +204,10 @@ header {
   flex-wrap: wrap;
   align-content: center;
   text-align: justify;
-  padding: 5% 5%;
+  padding: 1% 5%;
+}
+.about_inner{
+  padding: 1em 1em 2.2em 1em;
 }
 
 /* ============================== slider ====================== */
@@ -276,6 +279,7 @@ header {
 
 .section-paragraf-center{
   width: 100%;
+  padding:1em 0.7em 0 1em;
 }
 .section-paragraf span {
   color: rgb(93, 70, 117);
