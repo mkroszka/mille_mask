@@ -508,7 +508,9 @@ svg:hover {
   min-height: 50vh;
   margin: 20px;
 }
-
+.about.border-section{
+    min-width: 55vw;
+}
 .border-inside {
   background-color: rgba(144, 144, 144, 0.2);
   padding: 1rem 1.5rem;
