@@ -169,6 +169,17 @@
     font-size: 1em;
   }
 
+  .section-paragraf-left{
+  padding-top: 5%;
+   padding-bottom: 10%;
+  }
+
+
+.section-paragraf-bottom{
+margin-top:2%;
+}
+
+
   /* .border-section {
   border: 15px solid !important;
   border-image: url(../img/border.svg) !important;
