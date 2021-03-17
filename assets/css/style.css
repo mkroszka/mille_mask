@@ -150,7 +150,6 @@ header {
 }
 
 .offer .offer_inner {
-
   padding-bottom: 50px;
 }
 
@@ -177,6 +176,24 @@ header {
   font-family: 'Megrim', cursive;
   font-weight: bolder;
   font-size: 1.4rem;
+}
+
+.bulb{
+  position:absolute;
+  top:3%;
+}
+.bulb img{
+
+  width: 125%;
+  height: 125%;
+  
+}
+#offer-two ul {
+  padding-top: 2.5em;
+}
+
+.bulb svg:hover {
+  filter: none;
 }
 .about::-webkit-scrollbar-track,
 .offer::-webkit-scrollbar-track {
@@ -206,7 +223,7 @@ header {
   text-align: justify;
   padding: 1% 5%;
 }
-.about_inner{
+.about_inner {
   padding: 1em 1em 2.2em 1em;
 }
 
@@ -255,8 +272,6 @@ header {
   color: rgb(155, 155, 155);
 }
 
-
-
 .active {
   background-color: rgb(93, 70, 117);
   color: rgb(155, 155, 155);
@@ -273,13 +288,13 @@ header {
   width: 45%;
 }
 
-.section-paragraf-left{
-    padding-bottom: 15%;
+.section-paragraf-left {
+  padding-bottom: 15%;
 }
 
-.section-paragraf-center{
+.section-paragraf-center {
   width: 100%;
-  padding:1em 0.7em 0 1em;
+  padding: 1em 0.7em 0 1em;
 }
 .section-paragraf span {
   color: rgb(93, 70, 117);
@@ -303,8 +318,7 @@ header {
   color: rgb(209, 198, 214);
 }
 .contact {
-  background-image: url(../img/contact_right.png),
-    url(../img/contact_right.jpg);
+  background-image: url(../img/contact_right.png), url(../img/contact_right.jpg);
   background-size: 40%, 60%;
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
@@ -356,7 +370,7 @@ header {
 }
 .offer .m_circle {
   margin-right: 0.5em;
-margin-bottom: calc(40px + 0.5em);
+  margin-bottom: calc(40px + 0.5em);
 }
 /* .offer .close{
     padding-right: 0.5rem;
@@ -508,8 +522,8 @@ svg:hover {
   min-height: 50vh;
   margin: 20px;
 }
-.about.border-section{
-    min-width: 43vw;
+.about.border-section {
+  min-width: 43vw;
 }
 .border-inside {
   background-color: rgba(144, 144, 144, 0.2);
@@ -528,11 +542,22 @@ svg:hover {
   transition: 0.5s;
 }
 
-.offer_one{ background: url(../img/offer-one.jpg) no-repeat right center;
-background-size: cover;}
-.offer_two{background: url(../img/offer-two.jpg) no-repeat right top; background-size: cover;}
-.offer_three{background: url(../img/offer_three.jpg)  no-repeat right bottom; background-size: cover;}
-.offer_four{background: url(../img/offer-four.jpg) no-repeat right top; background-size: cover;}
+.offer_one {
+  background: url(../img/offer-one.jpg) no-repeat right center;
+  background-size: cover;
+}
+.offer_two {
+  background: url(../img/offer-two.jpg) no-repeat right top;
+  background-size: cover;
+}
+.offer_three {
+  background: url(../img/offer_three.jpg) no-repeat right bottom;
+  background-size: cover;
+}
+.offer_four {
+  background: url(../img/offer-four.jpg) no-repeat right top;
+  background-size: cover;
+}
 
 @-webkit-keyframes scrollanim {
   0% {
