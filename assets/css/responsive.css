@@ -151,6 +151,10 @@
     background-size: 30%, 60%;
     width: 35%;
   }
+  .bulb img {
+    width: 108%;
+    height: 108%;
+  }
 }
 @media (min-device-width: 2350px) {
   .contact {
