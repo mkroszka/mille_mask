@@ -151,7 +151,6 @@
     background-size: 30%, 60%;
     width: 35%;
   }
-
 }
 @media (min-device-width: 2350px) {
   .contact {
@@ -159,7 +158,7 @@
     width: 35%;
   }
   .offer ul li {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .offer h3 {
