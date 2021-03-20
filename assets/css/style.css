@@ -209,6 +209,9 @@ header {
 .about_inner {
   padding: 1em 1em 2.2em 1em;
 }
+.about .section-paragraf {
+  font-size: 1.2em;
+}
 
 /* ============================== slider ====================== */
 .slider_nav {
