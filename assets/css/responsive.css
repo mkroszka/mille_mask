@@ -46,7 +46,7 @@
   }
 
   .section-paragraf {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 10px;
     width: 100%;
   }
@@ -81,6 +81,11 @@
   .offer_inner {
     /* padding: 2% 2%; */
   }
+
+  .about .section-paragraf {
+  font-size: 0.8em;
+}
+
   .offer_inner {
     font-size: 1.05rem;
     align-content: start;
@@ -103,8 +108,12 @@
 
   .about,
   .offer {
-    margin-top: 30%;
-    /* height: 100%; */
+    margin-top: 25%;
+   
+  }
+
+  .about{
+height: 80vh;
   }
 
   .navigation-button {
