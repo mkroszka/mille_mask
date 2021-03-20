@@ -4,6 +4,9 @@
   .main-wrapper {
     overflow: auto;
   }
+  ul {
+    padding-left: 0.7em;
+  }
   svg {
     width: 80px;
   }
