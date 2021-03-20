@@ -48,7 +48,7 @@ $(window).on('load', function () {
     $('#contact_dot, #about_dot, #offer_dot').hide();
     $('#offer-two, #offer-three, #offer-four').hide();
 
-    $('#logotyp').on('click', function () {
+    $('.logotyp_trigger').on('click', function () {
       if ($('.tip').is(':hidden')) {
         $('.tip').fadeIn();
         lineAbout.show('draw', { duration: 600, timing: 'linear' }),
