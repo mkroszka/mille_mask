@@ -27,7 +27,7 @@
     border-radius: 8%;
   }
   .border-section {
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .border-inside {
@@ -70,7 +70,7 @@
   }
   .about_inner,
   .offer_inner {
-    padding: 2% 2%;
+    /* padding: 2% 2%; */
   }
   .offer_inner {
     font-size: 1.05rem;
@@ -78,7 +78,7 @@
     height: initial;
   }
   .offer .grey {
-    height: 100vh;
+    height: 80vh;
     overflow-y: hidden;
   }
   .offer ul li {
@@ -87,6 +87,9 @@
   }
   .offer h3 {
     font-size: 1.1em;
+  }
+  .offer .close {
+    margin-bottom: 5px;
   }
 
   .about,
@@ -111,15 +114,13 @@
   }
   .s_button {
     width: 70%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   .slider-button a {
     font-size: 13px;
   }
 
   .slider-button {
-    padding: 0.1rem 0.2rem;
-
     font-size: 1rem;
     font-weight: bold;
     color: rgb(67, 22, 77);
