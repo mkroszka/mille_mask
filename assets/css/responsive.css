@@ -1,6 +1,12 @@
 /* RESPONSIVE=================================================================================== */
 
 @media (min-device-width: 360px) and (max-device-width: 1024px) {
+  .heading h1{
+    font-size: 1.7em;
+  }
+  .heading h2{
+  font-size: 0.61em;
+    }
   .main-wrapper {
     overflow: auto;
   }
