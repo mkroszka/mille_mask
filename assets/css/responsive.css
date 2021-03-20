@@ -78,14 +78,15 @@
     height: initial;
   }
   .offer .grey {
-    height: 80vh;
+    height: 100vh;
+    overflow-y: hidden;
   }
   .offer ul li {
     margin-bottom: 0;
     font-size: 0.9rem;
   }
   .offer h3 {
-    font-size: 1.5rem;
+    font-size: 1.1em;
   }
 
   .about,
