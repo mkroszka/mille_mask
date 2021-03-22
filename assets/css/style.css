@@ -460,6 +460,9 @@ header {
 svg:hover {
   filter: drop-shadow(0 0 0.3rem rgb(61, 61, 61));
 }
+.mask-logotyp {
+  position: relative;
+}
 
 .nav-btn {
   text-decoration: none;

@@ -76,7 +76,7 @@ $(window).on('load', function () {
       } else {
         $('.tip').fadeOut();
         lineAbout.hide();
-        lineContact.hide();
+        lineContact.hide();git 
         lineOffer.hide();
         $('.circle-animated').fadeOut();
       }
