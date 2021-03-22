@@ -66,11 +66,28 @@ $(window).on('load', function () {
       $('.animation_quote_container').hide();
     });
 
+    $('.logotyp_trigger, .logo-M').on('tap', function () {
+      if ($('.tip').is(':hidden')) {
+        $('.tip').fadeIn();
+        lineAbout.show('draw', { duration: 600, timing: 'linear' }),
+          lineOffer.show('draw', { duration: 600, timing: 'linear' }),
+          lineContact.show('draw', { duration: 600, timing: 'linear' }),
+          $('.circle-animated').fadeIn();
+      } else {
+        $('.tip').fadeOut();
+        lineAbout.hide();
+        lineContact.hide();
+        lineOffer.hide();
+        $('.circle-animated').fadeOut();
+      }
+      $('.arrows-container').fadeToggle();
+      $('.animation_quote_container').hide();
+    });
+
     $('.navigation-button').click(function () {
       $('.section, .tip').hide();
       $('.tip').hide();
       $('.circle-animated').hide();
-      // $('.grey').css({ 'background-image': 'url(assets/img/offer-one.jpg)' });
       lineAbout.hide();
       lineContact.hide();
       lineOffer.hide();
