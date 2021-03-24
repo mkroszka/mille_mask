@@ -76,6 +76,7 @@ $(window).on('load', function () {
     $('#offer-two, #offer-three, #offer-four').hide();
     $('.enter').hide();
 
+    // mobile function
     if (isMobile.any()) {
       $('.enter').show();
     }
@@ -99,6 +100,7 @@ $(window).on('load', function () {
     });
 
     $('.logotyp_trigger, .logo-M').on('tap', function () {
+      $('.enter').hide();
       if ($('.tip').is(':hidden')) {
         $('.tip').fadeIn();
         lineAbout.show('draw', { duration: 600, timing: 'linear' }),
