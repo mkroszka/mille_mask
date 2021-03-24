@@ -86,19 +86,20 @@ $(document).ready(function () {
   $('#offer-two, #offer-three, #offer-four').hide();
 
   $('.logotyp_trigger, .logo-M, .navmobile').on('click', function () {
-    $('.navmobile').toggle();
     if ($('.tip').is(':hidden')) {
       $('.tip').fadeIn();
       lineAbout.show('draw', { duration: 600, timing: 'linear' }),
         lineOffer.show('draw', { duration: 600, timing: 'linear' }),
         lineContact.show('draw', { duration: 600, timing: 'linear' }),
         $('.circle-animated').fadeIn();
+      $('.navmobile').fadeOut();
     } else {
       $('.tip').fadeOut();
       lineAbout.hide();
       lineContact.hide();
       lineOffer.hide();
       $('.circle-animated').fadeOut();
+      $('.navmobile').fadeIn();
     }
     $('.arrows-container').fadeToggle();
     $('.animation_quote_container').hide();
