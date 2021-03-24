@@ -107,6 +107,7 @@ $(document).ready(function () {
 
   $('.navigation-button').click(function () {
     $('.section, .tip').hide();
+    $('.navmobile').hide();
     $('.tip').hide();
     $('.circle-animated').hide();
     lineAbout.hide();
