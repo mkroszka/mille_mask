@@ -79,7 +79,8 @@ $(window).on('load', function () {
     // mobile function
     if (isMobile.any()) {
       $('.enter').show();
-      $('#enter-btn').on('click', function () {
+      $('#enter-btn').on('tap', function () {
+        $('.enter').toggle();
         if ($('.tip').is(':hidden')) {
           $('.tip').fadeIn();
           lineAbout.show('draw', { duration: 600, timing: 'linear' }),
