@@ -79,13 +79,21 @@ $(window).on('load', function () {
     // mobile function
     if (isMobile.any()) {
       $('.enter').show();
-      $('#enter-btn').on('tap', function () {
-        $('.enter').hide();
-        $('.tip').fadeIn();
-        lineAbout.show('draw', { duration: 600, timing: 'linear' }),
-          lineOffer.show('draw', { duration: 600, timing: 'linear' }),
-          lineContact.show('draw', { duration: 600, timing: 'linear' }),
-          $('.circle-animated').fadeIn();
+      $('#enter-btn').on('click', function () {
+        if ($('.tip').is(':hidden')) {
+          $('.tip').fadeIn();
+          lineAbout.show('draw', { duration: 600, timing: 'linear' }),
+            lineOffer.show('draw', { duration: 600, timing: 'linear' }),
+            lineContact.show('draw', { duration: 600, timing: 'linear' }),
+            $('.circle-animated').fadeIn();
+        } else {
+          $('.tip').fadeOut();
+          lineAbout.hide();
+          lineContact.hide();
+          lineOffer.hide();
+          $('.circle-animated').fadeOut();
+        }
+        $('.arrows-container').fadeToggle();
         $('.animation_quote_container').hide();
       });
     }
