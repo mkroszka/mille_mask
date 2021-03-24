@@ -99,7 +99,9 @@ $(document).ready(function () {
       lineContact.hide();
       lineOffer.hide();
       $('.circle-animated').fadeOut();
-      $('.navmobile').fadeIn();
+      if (isMobile.any()) {
+        $('.navmobile').show();
+      }
     }
     $('.arrows-container').fadeToggle();
     $('.animation_quote_container').hide();
