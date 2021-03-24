@@ -70,13 +70,23 @@ $(document).ready(function () {
       );
     },
   };
+
+  $('.navmobile').hide();
+
+  // mobile function
+  if (isMobile.any()) {
+    $('.navmobile').show();
+    console.log('this is mobile');
+  }
+
   $('#coverScreen').hide();
   $('.section').hide();
   $('.tip').hide();
   $('#contact_dot, #about_dot, #offer_dot').hide();
   $('#offer-two, #offer-three, #offer-four').hide();
 
-  $('.logotyp_trigger, .logo-M').on('click', function () {
+  $('.logotyp_trigger, .logo-M, .navmobile').on('click', function () {
+    $('.navmobile').toggle();
     if ($('.tip').is(':hidden')) {
       $('.tip').fadeIn();
       lineAbout.show('draw', { duration: 600, timing: 'linear' }),
@@ -135,6 +145,9 @@ $(document).ready(function () {
     $('.arrows-container').fadeIn();
     $('.circle-animated').hide();
     $('.logotyp svg').show();
+    if (isMobile.any()) {
+      $('.navmobile').show();
+    }
   });
   $('.animation_quote_container').hide();
 
@@ -171,9 +184,4 @@ $(document).ready(function () {
       $(this).addClass('active');
     });
   });
-
-  // mobile function
-  if (isMobile.any()) {
-    $('#btn-mobile').show();
-  } else $('#btn-mobile').hide();
 });

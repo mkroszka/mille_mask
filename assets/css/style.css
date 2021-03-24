@@ -463,7 +463,10 @@ svg:hover {
 .mask-logotyp {
   position: relative;
 }
-
+.nav-mobile {
+  position: relative;
+}
+.navmobile-btn,
 .nav-btn {
   text-decoration: none;
   color: rgba(80, 97, 130, 0.7);
@@ -474,7 +477,7 @@ svg:hover {
 .tip {
   cursor: pointer;
 }
-
+.navmobile-btn:hover,
 .nav-btn:hover {
   color: rgb(80, 97, 130);
 }
@@ -497,6 +500,11 @@ svg:hover {
   justify-content: flex-end;
 }
 
+.tip-down-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 .border {
   border: 7px solid !important;
   border-image: url(../img/border.svg) !important;

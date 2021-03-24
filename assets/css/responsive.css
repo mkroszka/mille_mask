@@ -10,6 +10,7 @@
   .main-wrapper {
     overflow: auto;
   }
+
   ul {
     padding-left: 0.7em;
   }
@@ -34,7 +35,6 @@
     padding: 0.2rem 0.2rem;
     border-radius: 8%;
   }
-
 
   .border-inside {
     background-color: rgba(144, 144, 144, 0.2);
@@ -114,7 +114,6 @@
     font-family: 'Megrim', cursive;
     font-weight: bold;
     font-size: 1em;
-   
   }
 
   .slider_nav {
@@ -181,6 +180,4 @@
   .section-paragraf-bottom {
     margin-top: 2%;
   }
-
-
 }
