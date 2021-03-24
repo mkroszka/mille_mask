@@ -42,11 +42,43 @@ $(window).on('load', function () {
       endPlugOutlineSize: 1,
       hide: true,
     });
+
+    var isMobile = {
+      Android: function () {
+        return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function () {
+        return (
+          isMobile.Android() ||
+          isMobile.BlackBerry() ||
+          isMobile.iOS() ||
+          isMobile.Opera() ||
+          isMobile.Windows()
+        );
+      },
+    };
     $('#coverScreen').hide();
     $('.section').hide();
     $('.tip').hide();
     $('#contact_dot, #about_dot, #offer_dot').hide();
     $('#offer-two, #offer-three, #offer-four').hide();
+    $('.enter').hide();
+
+    if (isMobile.any()) {
+      $('.enter').show();
+    }
 
     $('.logotyp_trigger, .logo-M').on('click', function () {
       if ($('.tip').is(':hidden')) {
@@ -76,7 +108,8 @@ $(window).on('load', function () {
       } else {
         $('.tip').fadeOut();
         lineAbout.hide();
-        lineContact.hide();git 
+        lineContact.hide();
+        git;
         lineOffer.hide();
         $('.circle-animated').fadeOut();
       }
