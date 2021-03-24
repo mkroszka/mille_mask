@@ -79,8 +79,15 @@ $(window).on('load', function () {
     // mobile function
     if (isMobile.any()) {
       $('.enter').show();
-      $('.logotyp_trigger, .enter').on('tap', function () {
+
+      $('.enter').on('tap', function () {
         $('.enter').hide();
+        $('.tip').fadeIn();
+        lineAbout.show('draw', { duration: 600, timing: 'linear' }),
+          lineOffer.show('draw', { duration: 600, timing: 'linear' }),
+          lineContact.show('draw', { duration: 600, timing: 'linear' }),
+          $('.circle-animated').fadeIn();
+        $('.animation_quote_container').hide();
       });
     }
 
@@ -95,25 +102,6 @@ $(window).on('load', function () {
         $('.tip').fadeOut();
         lineAbout.hide();
         lineContact.hide();
-        lineOffer.hide();
-        $('.circle-animated').fadeOut();
-      }
-      $('.arrows-container').fadeToggle();
-      $('.animation_quote_container').hide();
-    });
-
-    $('.logotyp_trigger, .logo-M').on('tap', function () {
-      if ($('.tip').is(':hidden')) {
-        $('.tip').fadeIn();
-        lineAbout.show('draw', { duration: 600, timing: 'linear' }),
-          lineOffer.show('draw', { duration: 600, timing: 'linear' }),
-          lineContact.show('draw', { duration: 600, timing: 'linear' }),
-          $('.circle-animated').fadeIn();
-      } else {
-        $('.tip').fadeOut();
-        lineAbout.hide();
-        lineContact.hide();
-        git;
         lineOffer.hide();
         $('.circle-animated').fadeOut();
       }
