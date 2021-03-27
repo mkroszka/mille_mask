@@ -6,14 +6,16 @@ $(document).ready(function () {
       'press-office services',
       'media relations for NGOs',
       'advanced public relations & public affairs projects',
-      'media and public speaking training']
+      'media and public speaking training'],
+    backgroundImageUrl: 'adres obrazka'
   },{
     title: 'Support in',
     listItems: [
       'social-media campaigns',
       'content marketing',
       'multimedia & web-design',
-      'isual identity creation']
+      'isual identity creation'],
+    backgroundImageUrl: 'adres obrazka'
   },{
     title: 'Our Research &amp; Intel Team is ready for:',
     listItems: [
@@ -30,14 +32,12 @@ $(document).ready(function () {
         'smart city',
         'creative industries',
         'education',
-        'NGOs campaigns']
+        'NGOs campaigns'],
+    backgroundImageUrl: 'adres obrazka'
   }]
 
-  // $.fn.switchClass = function (pFromClass, pToClass) {
-  //   return this.removeClass(pFromClass).addClass(pToClass);
-  // };
-
   function renderOffer(offer) {
+    $('.offer-bg').css('background-image', offer.backgroundImageUrl);
     $('#slider').empty();
     $('#slider').append(`<h3>${offer.title}</h3>`);
     $('#slider').append(`<ul class="offer-list"></ul>`);
