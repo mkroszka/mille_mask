@@ -124,25 +124,25 @@ $(document).ready(function () {
   });
 
   // offer section fade navigation
-  $('.s_button').click(function () {
-    $('.slider').hide();
-    $('#' + $(this).data('id')).fadeIn(1000);
-  });
+  // $('.s_button').click(function () {
+  //   $('.slider').hide();
+  //   $('#' + $(this).data('id')).fadeIn(1000);
+  // });
 
-  $('#offer_button_one').click(function () {
-    $('#grey').removeClass().addClass('offer_one grey');
-  });
+  // $('#offer_button_one').click(function () {
+  //   $('#grey').removeClass().addClass('offer_one grey');
+  // });
 
-  $('#offer_button_two').click(function () {
-    $('#grey').removeClass().addClass('offer_two grey');
-  });
+  // $('#offer_button_two').click(function () {
+  //   $('#grey').removeClass().addClass('offer_two grey');
+  // });
 
-  $('#offer_button_three').click(function () {
-    $('#grey').removeClass().addClass('offer_three grey');
-  });
-  $('#offer_button_four').click(function () {
-    $('#grey').removeClass().addClass('offer_four grey');
-  });
+  // $('#offer_button_three').click(function () {
+  //   $('#grey').removeClass().addClass('offer_three grey');
+  // });
+  // $('#offer_button_four').click(function () {
+  //   $('#grey').removeClass().addClass('offer_four grey');
+  // });
 
   $('.close').click(function () {
     $('.section').fadeOut(700);
@@ -183,9 +183,6 @@ $(document).ready(function () {
       $('.animation_quote_container').toggle();
     });
 
-    $('.slider-button').click(function () {
-      $('.slider-button').removeClass('active');
-      $(this).addClass('active');
-    });
+ 
   });
 });
