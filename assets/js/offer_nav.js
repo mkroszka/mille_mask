@@ -1,84 +1,79 @@
 $(document).ready(function () {
-  var offer_one = `
-                    <h3>At your service:</h3>
-                    <ul>
-                        <li>strategic communications campaigns and consulting</li>
-                        <li>press-office services</li>
-                        <li>media relations for NGOs</li>
-                        <li>advanced public relations & public affairs projects</li>
-                        <li>media and public speaking training</li>
-                    </ul>`;
-
-  var offer_two = ` <h3>Support in</h3>
-                    <ul>
-                        <li>social-media campaigns</li>
-                        <li>content marketing</li>
-                        <li>multimedia & web-design</li>
-                        <li>visual identity creation</li>
-
-                    </ul>`;
-
-  var offer_three = ` 
-              
-
-                    <h3>Our Research &amp; Intel Team is ready for:</h3>
-                    <ul>
-                        <li>media analytics &amp; social research (based on quantity and quality methodologies)</li>
-                        <li>desk-research &amp; OSINT</li>
-                        <li>data science</li>
-                        <li>strategic insights &amp; issue papers (evidence based)</li>
-
-                    </ul>
-               `;
-
-  var offer_four = `
-
-              
-
-                    <h3> Sectors of expertise | Projects realized or in progress</h3>
-                    <ul>
-                        <li>security & defense</li>
-                        <li>energy</li>
-                        <li>public sector</li>
-                        <li>smart city</li>
-                        <li>creative industries</li>
-                        <li>education</li>
-                        <li>NGOs campaigns</li>
-
-                    </ul>`;
-  var classes = ['offer_one', 'offer_two', 'offer_three', 'offer_four'];
+  const offers = [{
+    title: 'At your service:',
+    listItems: [
+      'strategic communications campaigns and consulting',
+      'press-office services',
+      'media relations for NGOs',
+      'advanced public relations & public affairs projects',
+      'media and public speaking training']
+  },{
+    title: 'Support in',
+    listItems: [
+      'social-media campaigns',
+      'content marketing',
+      'multimedia & web-design',
+      'isual identity creation']
+  },{
+    title: 'Our Research &amp; Intel Team is ready for:',
+    listItems: [
+       'media analytics &amp; social research (based on quantity and quality methodologies)',
+       'desk-research &amp; OSINT',
+       'data science',
+       'strategic insights &amp; issue papers (evidence based)']
+  },{
+    title: 'Sectors of expertise | Projects realized or in progress',
+    listItems: [
+        'security & defense',
+        'energy',
+        'public sector',
+        'smart city',
+        'creative industries',
+        'education',
+        'NGOs campaigns']
+  }]
 
   $.fn.switchClass = function (pFromClass, pToClass) {
     return this.removeClass(pFromClass).addClass(pToClass);
   };
 
+  function renderOffer(offer) {
+    $('#slider').clear();
+    $('#slider').append(`<h3>{offer.title}</h3>`);
+    $('#slider').append(`<ul></ul>`);
+    
+    offer.listItems.forEach(function(item) {
+      $('#slider > ul).append(`<li>{item</li>`);
+    });
+  }
+  
   $('#offer_btn').click(function () {
-    $('#slider').html(offer_one);
+    renderOffer(0);
     $('.grey').switchClass(classes, 'offer_one');
   });
 
   $('#offer_button_one').click(function () {
-    $('#slider').html(offer_one);
+    renderOffer(0);
     $('.grey').switchClass(classes, 'offer_one');
   });
 
   $('#offer_button_two').click(function () {
-    $('#slider').html(offer_two);
+    renderOffer(1);
     $('#grey').switchClass(classes, 'offer_two');
   });
 
   $('#offer_button_three').click(function () {
-    $('#slider').html(offer_three);
+    renderOffer(2);
     $('#grey').switchClass(classes, 'offer_three');
   });
 
   $('#offer_button_four').click(function () {
-    $('#slider').html(offer_four);
+    renderOffer(3);
     $('#grey').switchClass(classes, 'offer_four');
   });
 
   $('.slider-button').click(function () {
-    $('.slider-button').removeClass('active');
+    $('#slider').removeClass('active');
     $(this).addClass('active');
   });
 });
