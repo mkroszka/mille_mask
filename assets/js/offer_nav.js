@@ -33,47 +33,42 @@ $(document).ready(function () {
         'NGOs campaigns']
   }]
 
-  $.fn.switchClass = function (pFromClass, pToClass) {
-    return this.removeClass(pFromClass).addClass(pToClass);
-  };
+  // $.fn.switchClass = function (pFromClass, pToClass) {
+  //   return this.removeClass(pFromClass).addClass(pToClass);
+  // };
 
   function renderOffer(offer) {
-    $('#slider').clear();
-    $('#slider').append(`<h3>{offer.title}</h3>`);
-    $('#slider').append(`<ul></ul>`);
+    $('#slider').empty();
+    $('#slider').append(`<h3>${offer.title}</h3>`);
+    $('#slider').append(`<ul class="offer-list"></ul>`);
     
     offer.listItems.forEach(function(item) {
-      $('#slider > ul).append(`<li>{item</li>`);
+      $('.offer-list').append(`<li>${item}</li>`);
     });
   }
   
   $('#offer_btn').click(function () {
-    renderOffer(0);
-    $('.grey').switchClass(classes, 'offer_one');
+    renderOffer(offers[0]);
   });
 
   $('#offer_button_one').click(function () {
-    renderOffer(0);
-    $('.grey').switchClass(classes, 'offer_one');
+    renderOffer(offers[0]);
   });
 
   $('#offer_button_two').click(function () {
-    renderOffer(1);
-    $('#grey').switchClass(classes, 'offer_two');
+    renderOffer(offers[1]);
   });
 
   $('#offer_button_three').click(function () {
-    renderOffer(2);
-    $('#grey').switchClass(classes, 'offer_three');
+    renderOffer(offers[2]);
   });
 
   $('#offer_button_four').click(function () {
-    renderOffer(3);
-    $('#grey').switchClass(classes, 'offer_four');
+    renderOffer(offers[3]);
   });
 
   $('.slider-button').click(function () {
-    $('#slider').removeClass('active');
+    $('.slider-button').removeClass('active');
     $(this).addClass('active');
   });
 });
