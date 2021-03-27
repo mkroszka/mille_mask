@@ -83,13 +83,4 @@ $(document).ready(function () {
   });
 });
 
-// $('#offer_button_two').click(function () {
-//   $('#grey').removeClass().addClass('offer_two grey');
-// });
 
-// $('#offer_button_three').click(function () {
-//   $('#grey').removeClass().addClass('offer_three grey');
-// });
-// $('#offer_button_four').click(function () {
-//   $('#grey').removeClass().addClass('offer_four grey');
-// });
